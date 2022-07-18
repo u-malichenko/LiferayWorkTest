@@ -1,0 +1,4 @@
+Bundle-Name: lexicontest
+Bundle-SymbolicName: com.lexicon.test
+Bundle-Version: 1.0.0
+Export-Package: com.lexicon.test.constants
