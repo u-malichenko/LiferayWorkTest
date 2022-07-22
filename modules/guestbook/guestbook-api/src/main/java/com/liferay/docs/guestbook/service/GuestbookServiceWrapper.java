@@ -34,44 +34,6 @@ public class GuestbookServiceWrapper
 		_guestbookService = guestbookService;
 	}
 
-	@Override
-	public com.liferay.docs.guestbook.model.Guestbook addGuestbook(
-			long userId, String name,
-			com.liferay.portal.kernel.service.ServiceContext serviceContext)
-		throws com.liferay.portal.kernel.exception.PortalException {
-
-		return _guestbookService.addGuestbook(userId, name, serviceContext);
-	}
-
-	@Override
-	public java.util.List<com.liferay.docs.guestbook.model.Guestbook>
-		getGuestbooks(long groupId) {
-
-		return _guestbookService.getGuestbooks(groupId);
-	}
-
-	@Override
-	public java.util.List<com.liferay.docs.guestbook.model.Guestbook>
-		getGuestbooks(long groupId, int start, int end) {
-
-		return _guestbookService.getGuestbooks(groupId, start, end);
-	}
-
-	@Override
-	public java.util.List<com.liferay.docs.guestbook.model.Guestbook>
-		getGuestbooks(
-			long groupId, int start, int end,
-			com.liferay.portal.kernel.util.OrderByComparator
-				<com.liferay.docs.guestbook.model.Guestbook> obc) {
-
-		return _guestbookService.getGuestbooks(groupId, start, end, obc);
-	}
-
-	@Override
-	public int getGuestbooksCount(long groupId) {
-		return _guestbookService.getGuestbooksCount(groupId);
-	}
-
 	/**
 	 * Returns the OSGi service identifier.
 	 *

@@ -36,8 +36,8 @@ import java.util.List;
  * @author liferay
  */
 @Component(
-	property = "model.class.name=com.liferay.docs.guestbook.model.Entry",
-	service = AopService.class
+		property = "model.class.name=com.liferay.docs.guestbook.model.Entry",
+		service = AopService.class
 )
 public class EntryLocalServiceImpl extends EntryLocalServiceBaseImpl {
 	public Entry addEntry(

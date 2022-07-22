@@ -14,12 +14,6 @@
 
 package com.liferay.docs.guestbook.service;
 
-import com.liferay.docs.guestbook.model.Guestbook;
-import com.liferay.portal.kernel.exception.PortalException;
-import com.liferay.portal.kernel.util.OrderByComparator;
-
-import java.util.List;
-
 /**
  * Provides the remote service utility for Guestbook. This utility wraps
  * <code>com.liferay.docs.guestbook.service.impl.GuestbookServiceImpl</code> and is an
@@ -39,40 +33,13 @@ public class GuestbookServiceUtil {
 	 *
 	 * Never modify this class directly. Add custom service methods to <code>com.liferay.docs.guestbook.service.impl.GuestbookServiceImpl</code> and rerun ServiceBuilder to regenerate this class.
 	 */
-	public static Guestbook addGuestbook(
-			long userId, String name,
-			com.liferay.portal.kernel.service.ServiceContext serviceContext)
-		throws PortalException {
-
-		return getService().addGuestbook(userId, name, serviceContext);
-	}
-
-	public static List<Guestbook> getGuestbooks(long groupId) {
-		return getService().getGuestbooks(groupId);
-	}
-
-	public static List<Guestbook> getGuestbooks(
-		long groupId, int start, int end) {
-
-		return getService().getGuestbooks(groupId, start, end);
-	}
-
-	public static List<Guestbook> getGuestbooks(
-		long groupId, int start, int end, OrderByComparator<Guestbook> obc) {
-
-		return getService().getGuestbooks(groupId, start, end, obc);
-	}
-
-	public static int getGuestbooksCount(long groupId) {
-		return getService().getGuestbooksCount(groupId);
-	}
 
 	/**
 	 * Returns the OSGi service identifier.
 	 *
 	 * @return the OSGi service identifier
 	 */
-	public static String getOSGiServiceIdentifier() {
+	public static java.lang.String getOSGiServiceIdentifier() {
 		return getService().getOSGiServiceIdentifier();
 	}
 
