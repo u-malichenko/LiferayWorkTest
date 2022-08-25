@@ -1,0 +1,18 @@
+{
+	"translatorTextKey": "",
+	"supportedLocales": [],
+	"liferayDir": "C:\\work\\liferay-ce-portal-7.4.3.33-ga33",
+	"webpack": {
+		"rules": [
+			{
+				"test": "src\\\\.*\\.ts$",
+				"use": "ts-loader"
+			}
+		],
+		"extensions": [
+			".ts",
+			".js"
+		],
+		"mainModule": "index.ts"
+	}
+}

@@ -4,7 +4,6 @@ import com.employee.model.Employee;
 import com.employee.service.EmployeeLocalServiceUtil;
 import com.employee.test.constants.EmployeeTestPortletKeys;
 
-import com.liferay.calendar.service.CalendarLocalServiceUtil;
 import com.liferay.counter.kernel.service.CounterLocalServiceUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 

@@ -20,7 +20,6 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Modified;
 import org.osgi.service.component.annotations.Reference;
 
-
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -100,7 +99,7 @@ public class LanguageTemplateConfigurationFormRenderer implements ConfigurationF
         languageTemplateConfigurationDisplayContext.setFieldLabel(
                 LanguageUtil.get(
                         ResourceBundleUtil.getBundle(
-                                locale, LanguageTemplateConfigurationFormRenderer.class),
+                                String.valueOf(locale), LanguageTemplateConfigurationFormRenderer.class),
                         "language-selection-style"));
 
         request.setAttribute(
